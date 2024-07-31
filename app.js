@@ -46,17 +46,48 @@ class Rectangle {
 
 const greenRectangle = new Rectangle(10,20)
 console.log(greenRectangle)
-console.log(greenRectangle.area())
-console.log(greenRectangle.perimeter())
+// console.log(greenRectangle.area())
+// console.log(greenRectangle.perimeter())
 
 
 // Challenge 3: Inheritance
 // Task:
-// Define a class Animal with a constructor that takes name and a method speak that returns a generic message.
-// Define a class Dog that extends Animal. Override the speak method to return a message specific to dogs.
+// Define a class Animal with a constructor that takes name and 
+// a method speak that returns a generic message.
+// Define a class Dog that extends Animal.
+//  Override the speak method to return a message specific to dogs.
+
+class Animal {
+    constructor(name, color){
+        this.name = name;
+        this.color = color;
+    }
+    speak (){
+        return 'I am a Cat: MEOW!'
+    }
+
+}
+
+class Dog extends Animal {
+    constructor(name, color){
+        super(name, color)
+
+    }
+    speak (){
+        return 'I am a dog: WOOF!'
+    }
+}
+
+const myCat = new Animal('Archie','yellow')
+const myDog = new Dog ('Mac','black')
+
+console.log(myCat)
+console.log(myCat.speak())
+console.log(myDog)
+console.log(myDog.speak())
+
 // Challenge 4: Static Methods and Properties
 // Task:
-
 // Define a class Circle.
 // Add a constructor that takes radius as a parameter.
 // Add a static method circumference that calculates the circumference of a circle given a radius.
