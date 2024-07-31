@@ -50,11 +50,6 @@ console.log(greenRectangle.area())
 console.log(greenRectangle.perimeter())
 
 
-
-
-
-
-
 // Challenge 3: Inheritance
 // Task:
 // Define a class Animal with a constructor that takes name and a method speak that returns a generic message.
