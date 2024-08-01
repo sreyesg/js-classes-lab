@@ -135,10 +135,10 @@ class Car {
 }
 
 const kimsCar = new Car('Honda','2018')
-console.log(kimsCar)
-console.log(kimsCar.getInfo())
+// console.log(kimsCar)
+// console.log(kimsCar.getInfo())
 kimsCar.carYear(2024)
-console.log(kimsCar)
+// console.log(kimsCar)
 
 // Challenge 7: Class with Static Properties
 // Task:
@@ -162,7 +162,7 @@ class Library {
 
 const centralLibrary = new Library('Central Library', 1500);
 const southLibrary = new Library('South Library', 2000)
-console.log(Library.getTotalBooks())
+// console.log(Library.getTotalBooks())
 
 // Challenge 8: Class with Array Property
 // Task:
@@ -170,6 +170,29 @@ console.log(Library.getTotalBooks())
 // Add a constructor that initializes an empty array songs.
 // Add methods to addSong and removeSong from the playlist.
 // Add a method listSongs that returns a string with all the songs in the playlist.
+class Playlist {
+    constructor (){
+        this.popList = [];
+    }
+    addSong (songName) {
+        this.popList.push(songName)
+    }
+    removeSong (){
+        this.popList.pop()
+    }
+    listSongs () {
+        return this.popList
+    }        
+}
+
+const myPlaylist = new Playlist()
+console.log(myPlaylist)
+myPlaylist.addSong('Yo te quiero para mi')
+myPlaylist.addSong('Yo te quiero para nada')
+console.log(myPlaylist)
+myPlaylist.removeSong()
+console.log(myPlaylist)
+
 
 
 // Challenge 9: Class Inheritance with Super
