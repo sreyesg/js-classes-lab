@@ -90,7 +90,23 @@ console.log(myDog.speak())
 // Task:
 // Define a class Circle.
 // Add a constructor that takes radius as a parameter.
-// Add a static method circumference that calculates the circumference of a circle given a radius.
+// Add a static method circumference that calculates the circumference 
+// of a circle given a radius.
+
+class Circle {
+    constructor(radius){
+        radius = radius;
+    }
+    static circumference (radius) {
+        return 2 * Math.PI * radius
+    } 
+}
+
+console.log(Circle.circumference())
+
+
+
+
 // Challenge 5: Private Properties and Methods (ES2020+)
 // Task:
 
